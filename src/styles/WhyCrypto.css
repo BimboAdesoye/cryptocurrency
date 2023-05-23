@@ -1,0 +1,92 @@
+.whycrypto {
+  background-color: #ede9ef;
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+.whycrypto-heading h2 {
+  margin-bottom: 2rem;
+}
+
+.whycrypto-heading button {
+  border: none;
+  width: 150px;
+  height: 45px;
+  background-color: #ede9ef;
+  border: 1px solid #7c20be;
+  border-radius: 5px;
+  color: #7c20be;
+}
+
+.whycrypto-content {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.whycrypto-content-inner {
+  max-width: 21.8487rem;
+  height: 21.125rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 2rem;
+  margin: auto;
+}
+
+.whycrypto-content-inner .image {
+  width: 9.6144rem;
+  height: 7.07rem;
+  border: 1px solid black;
+}
+
+.whycrypto-content-inner h6 {
+  font-size: 16px;
+  line-height: 18.75px;
+}
+
+.whycrypto-content-inner p {
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  width: 17.0356rem;
+}
+
+@media screen and (max-width: 768px) {
+  .whycrypto-content {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .whycrypto-content-inner {
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .whycrypto-content-inner p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .whycrypto-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .whycrypto-content-inner {
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+
+  .whycrypto-content-inner p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,22 @@
+.crypto {
+  background-color: #ede9ef;
+  border: 1px solid #D3D0D6;
+}
+
+.crypto .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.crypto-inner {
+    padding: 1rem 2rem;
+    border-right: 1px solid #D3D0D6;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .crypto .container {
+    grid-template-columns: 1fr;
+  }
+}
