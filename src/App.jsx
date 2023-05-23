@@ -5,7 +5,7 @@ import InstantBuy from "./components/InstantBuy";
 import Login from "./components/Login";
 import GetStarted from "./components/GetStarted";
 import Learn from "./components/Learn";
-import Home from "./pages/Home";
+import Home from "./components/Home";
 
 function App() {
   return (
