@@ -20,7 +20,6 @@
 
 .whycrypto-content {
   display: flex;
-  /* justify-content: space-between; */
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -55,6 +54,12 @@
   line-height: 20px;
   text-align: center;
   width: 17.0356rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .whycrypto-content-inner {
+    width: 18rem;
+  }
 }
 
 @media screen and (max-width: 768px) {

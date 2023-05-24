@@ -1,0 +1,128 @@
+.review {
+  background-color: #ffffff;
+  padding-top: 42px;
+  padding-bottom: 82px;
+}
+
+.review-heading {
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.review-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.review-inner {
+  width: 23.875rem;
+  height: 13.0625rem;
+  background-color: #7c20bf;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-inner .quote {
+  position: relative;
+  bottom: 37px;
+}
+
+.review-inner p {
+  max-width: 271px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.polygon {
+  width: 0;
+  height: 0;
+  position: relative;
+  bottom: 27px;
+  left: 30px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 64px solid #7c20bf;
+}
+
+.review-person {
+  display: flex;
+  margin-left: 30px;
+  gap: 1.5rem;
+}
+
+.review-person .person h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.review-person .person p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  .review-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .review-inner {
+    width: 18rem;
+  }
+
+  /* .review-inner p {
+    text-align: left;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  .review-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .review-inner {
+    width: 21rem;
+  }
+
+  .review-body {
+
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .review-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .review-inner {
+    width: 23rem;
+    margin: auto;
+  }
+
+  .review-inner p {
+    text-align: left;
+  }
+
+}
+
+@media screen and (max-width: 376px) {
+    .review-inner {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .review-inner {
+        width: 18rem;
+    }
+}

@@ -1,0 +1,70 @@
+.account {
+  background-color: #ede9ef;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
+.account-text {
+  font-size: 18px;
+  color: #292929;
+  font-weight: 400;
+}
+
+.account-heading {
+  font-size: 32px;
+  color: #26093a;
+  font-weight: 600;
+}
+
+.account-btn {
+  width: 19.1875rem;
+  height: 2.9375rem;
+  background-color: #7c20bf;
+  border-radius: 5.1296px;
+  margin-top: 2.5rem;
+  border: none;
+  color: #ffffff;
+}
+
+.account-logos {
+  display: flex;
+  width: 19.1875rem;
+  justify-content: space-between;
+  margin: 2rem auto;
+}
+
+.account-logo {
+  display: flex;
+  /* width: 9.2056rem; */
+  width: 48%;
+
+  max-height: 2.82rem;
+  border: 1.5px solid #292929;
+  gap: 10px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.account-logo div p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.4512rem;
+  color: #292929;
+}
+
+.account-logo div h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.7894rem;
+}
+
+@media screen and (max-width: 575px) {
+    .account-btn {
+        width: 18rem;
+    }
+
+    .account-logos {
+        width: 18rem;
+    }
+}
