@@ -78,10 +78,6 @@
   .review-inner {
     width: 18rem;
   }
-
-  /* .review-inner p {
-    text-align: left;
-  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -94,9 +90,6 @@
     width: 21rem;
   }
 
-  .review-body {
-
-  }
 }
 
 @media screen and (max-width: 426px) {

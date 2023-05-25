@@ -4,6 +4,7 @@ import WhyCrypto from "../pages/WhyCrypto";
 import Body from "../pages/Body";
 import Account from "../pages/Account";
 import Review from "../pages/Review";
+import Footer from "../pages/Footer";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Body></Body>
       <Account></Account>
       <Review></Review>
+      <Footer></Footer>
     </div>
   );
 };
