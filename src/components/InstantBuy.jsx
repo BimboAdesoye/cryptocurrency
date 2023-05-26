@@ -1,9 +1,11 @@
-
+import "../styles/InstantBuy.css";
 
 const InstantBuy = () => {
-  return (
-    <div>InstantBuy</div>
-  )
-}
+  return <div className="instantbuy">
+    <div>
+      
+    </div>
+  </div>;
+};
 
-export default InstantBuy
+export default InstantBuy;
