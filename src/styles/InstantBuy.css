@@ -39,7 +39,7 @@
   height: 100%;
 }
 
-.instantbuy-content .btns button:first-of-type {
+.instantbuy-content .btns .working {
   background-color: white;
 }
 
@@ -108,13 +108,13 @@
 }
 
 @media screen and (max-width: 376px) {
-    .instantbuy-content .arrow {
-        left: 250px;
-    }
+  .instantbuy-content .arrow {
+    left: 250px;
+  }
 }
 
 @media screen and (max-width: 340px) {
-    .instantbuy-content .arrow {
-        left: 190px;
-    }
+  .instantbuy-content .arrow {
+    left: 190px;
+  }
 }

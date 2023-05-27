@@ -10,7 +10,7 @@ const Navbar = () => {
     setIsActive(!isActive);
   }
   return (
-    <div className="navigation d-flex align-items-center stciky-top">
+    <div className="navigation d-flex align-items-center stiky-top">
       <div className="container nav">
         <div className="brand">
           <Link to="/">
