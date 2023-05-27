@@ -1,6 +1,6 @@
 import "../styles/Hero.css";
-import ellipse1 from "../assets/Ellipse 1.svg";
-import ellipse2 from "../assets/Ellipse 2.svg";
+// import ellipse1 from "../assets/Ellipse 1.svg";
+// import ellipse2 from "../assets/Ellipse 2.svg";
 import appstore from "../assets/Group 68@2x.svg";
 import googleplay from "../assets/Group 69.svg";
 

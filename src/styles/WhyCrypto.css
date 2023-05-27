@@ -6,6 +6,9 @@
 
 .whycrypto-heading h2 {
   margin-bottom: 2rem;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 
 .whycrypto-heading button {
@@ -13,7 +16,7 @@
   width: 150px;
   height: 45px;
   background-color: #ede9ef;
-  border: 1px solid #7c20be;
+  border: 1.6px solid #7c20be;
   border-radius: 5px;
   color: #7c20be;
 }
@@ -46,6 +49,8 @@
 .whycrypto-content-inner h6 {
   font-size: 16px;
   line-height: 18.75px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 .whycrypto-content-inner p {
@@ -53,6 +58,8 @@
   line-height: 20px;
   text-align: center;
   width: 17.0356rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (max-width: 1024px) {

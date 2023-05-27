@@ -36,14 +36,18 @@
 
 .account-logo {
   display: flex;
-  /* width: 9.2056rem; */
   width: 48%;
-
   max-height: 2.82rem;
-  border: 1.5px solid #292929;
+  border: 2px solid #292929;
   gap: 10px;
-  padding: 3px 5px;
+  padding: 4px;
   cursor: pointer;
+}
+
+.account-logo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .account-logo div p {
@@ -51,20 +55,22 @@
   font-weight: 400;
   font-size: 0.4512rem;
   color: #292929;
+  margin-bottom: 0;
 }
 
 .account-logo div h6 {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 0.7894rem;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 575px) {
-    .account-btn {
-        width: 18rem;
-    }
+  .account-btn {
+    width: 18rem;
+  }
 
-    .account-logos {
-        width: 18rem;
-    }
+  .account-logos {
+    width: 18rem;
+  }
 }

@@ -6,6 +6,7 @@ import facebook from "../assets/facebook.png";
 import copyright from "../assets/copyright.png";
 
 const Footer = () => {
+  let year = new Date().getFullYear();
   return (
     <footer className="">
       <div className="foot">
@@ -61,7 +62,7 @@ const Footer = () => {
       </div>
       <div className="copyright text-center">
         <img src={copyright} alt="" />
-        Tradexpress Technologies. All Rights Reserved
+        {year} Tradexpress Technologies. All Rights Reserved
       </div>
     </footer>
   );
