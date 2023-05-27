@@ -1,4 +1,5 @@
 import "../styles/GetStarted.css";
+import { Link } from "react-router-dom";
 
 const GetStarted = () => {
   return (
@@ -20,9 +21,14 @@ const GetStarted = () => {
           By clicking the Sign Up button below, you agree to TradExpress
           <a href="#"> terms and service</a>
         </p>
-        <button className="sign-up">Sign Up</button>
+        <Link to="/VerifyMail" className="sign-up">
+          <button className="sign-up">Sign Up</button>
+        </Link>
         <p>
-          Already have an account? <a href="#">Click here</a>
+          Already have an account? 
+          <Link to="/Login" href="#">
+            Click here
+          </Link>
         </p>
       </div>
     </div>

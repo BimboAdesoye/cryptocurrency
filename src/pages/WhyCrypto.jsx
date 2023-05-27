@@ -1,4 +1,7 @@
 import "../styles/WhyCrypto.css";
+import amico from '../assets/amico.png'
+import shopping from '../assets/shopping.png'
+import freelancer from '../assets/freelancer.png'
 
 const WhyCrypto = () => {
   return (
@@ -12,7 +15,9 @@ const WhyCrypto = () => {
         </div>
         <div className="whycrypto-content">
           <div className="whycrypto-content-inner">
-            <div className="image"></div>
+            <div className="image">
+              <img src={shopping} alt="" />
+            </div>
             <h6>Easy Mode of Payment</h6>
             <p>
               People can now easily send and receive money from anywhere in the
@@ -20,7 +25,9 @@ const WhyCrypto = () => {
             </p>
           </div>
           <div className="whycrypto-content-inner">
-            <div className="image"></div>
+            <div className="image">
+              <img src={freelancer} alt="" />
+            </div>
             <h6>Financial Freedom</h6>
             <p>
               Just like the internet no single entity controls the Crypto
@@ -29,7 +36,9 @@ const WhyCrypto = () => {
             </p>
           </div>
           <div className="whycrypto-content-inner">
-            <div className="image"></div>
+            <div className="image">
+              <img src={amico} alt="" />
+            </div>
             <h6>Investment</h6>
             <p>
               The constant demand as made Cryptocurrencies a Digital Gold used

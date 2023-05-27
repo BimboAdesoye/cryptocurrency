@@ -1,0 +1,120 @@
+.instantbuy {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.instantbuy-content {
+  background-color: #eeedee;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 3.7rem;
+  margin-bottom: 3.7rem;
+  padding: 2rem 3rem;
+  text-align: center;
+  width: 601px;
+}
+
+.instantbuy-content .heading {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.instantbuy-content .btns {
+  height: 40px;
+  background-color: #e4e4e4;
+  border-radius: 21px;
+}
+
+.instantbuy-content .btns button {
+  width: 50%;
+  border: none;
+  background-color: #e4e4e4;
+  border-radius: 21px;
+  height: 100%;
+}
+
+.instantbuy-content .btns button:first-of-type {
+  background-color: white;
+}
+
+.instantbuy-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: left;
+}
+
+.instantbuy-content form input {
+  border-radius: 5px;
+  border: none;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.instantbuy-content form input:focus {
+  outline: none;
+}
+
+.instantbuy-content form input::placeholder {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.instantbuy-content .continue {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #7c20bf;
+  height: 48px;
+}
+
+.instantbuy-content .arrow {
+  position: relative;
+  bottom: 38px;
+  left: 28.75rem;
+}
+
+.instantbuy-content .label {
+  margin-bottom: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+  .instantbuy-content .arrow {
+    left: 300px;
+  }
+
+  .instantbuy {
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  .instantbuy-content {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+    .instantbuy-content .arrow {
+        left: 250px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .instantbuy-content .arrow {
+        left: 190px;
+    }
+}

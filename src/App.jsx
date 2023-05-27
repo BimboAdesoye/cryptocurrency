@@ -6,6 +6,7 @@ import Login from "./components/Login";
 import GetStarted from "./components/GetStarted";
 import Learn from "./components/Learn";
 import Home from "./components/Home";
+import VerifyMail from "./components/VerifyMail";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/Login" element={<Login />}></Route>
         <Route path="/GetStarted" element={<GetStarted />}></Route>
         <Route path="/Learn" element={<Learn />}></Route>
+        <Route path="/VerifyMail" element={<VerifyMail />}></Route>
       </Routes>
     </BrowserRouter>
   );
