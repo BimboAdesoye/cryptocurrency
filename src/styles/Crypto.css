@@ -1,6 +1,6 @@
 .crypto {
   background-color: #ede9ef;
-  border: 1px solid #D3D0D6;
+  border: 1px solid #d3d0d6;
 }
 
 .crypto .container {
@@ -9,10 +9,26 @@
 }
 
 .crypto-inner {
-    padding: 1rem 2rem;
-    border-right: 1px solid #D3D0D6;
-    font-size: 14px;
-    font-family: 'Inter', sans-serif;
+  padding: 1rem 2rem;
+  border-right: 1px solid #d3d0d6;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.arrows {
+  margin-left: 5px;
+}
+
+.arrows .green {
+  background-color: lime;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.arrows .red {
+  background-color: #F9D1D1;
+  border-radius: 50%;
+  padding: 5px;
 }
 
 @media screen and (max-width: 768px) {

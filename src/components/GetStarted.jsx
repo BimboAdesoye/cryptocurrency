@@ -8,16 +8,18 @@ const GetStarted = () => {
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [error, setError] = useState(false);
+  const [error2, setError2] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
+
     if (username && email && fullname && number) {
       setUsername("");
       setFullname("");
       setEmail("");
       setNumber("");
     }
-    if (username) {
+    if (!username) {
       setError(!error);
     }
     if (fullname) {
@@ -33,13 +35,14 @@ const GetStarted = () => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const isFormatValid = emailPattern.test(email);
     if (!isFormatValid) {
-      setError(!error);
+      setError2(!error2);
     }
+    return;
   }
 
   const [data, setData] = useState("Full Name");
 
-  const [isActive, setIsActive] = useState('individual-btn');
+  const [isActive, setIsActive] = useState("individual-btn");
 
   function handleBusiness(btn) {
     setData("Business Name");
@@ -57,14 +60,14 @@ const GetStarted = () => {
         <h2>Welcome</h2>
         <div className="btns">
           <button
-            onClick={()=> handleIndividual('individual-btn')}
-            className={isActive === 'individual-btn' ? "working" : ""}
+            onClick={() => handleIndividual("individual-btn")}
+            className={isActive === "individual-btn" ? "working" : ""}
           >
             Individual
           </button>
           <button
-            onClick={()=> handleBusiness('business-btn')}
-            className={isActive === 'business-btn' ? "working" : ""}
+            onClick={() => handleBusiness("business-btn")}
+            className={isActive === "business-btn" ? "working" : ""}
           >
             Business
           </button>
@@ -77,9 +80,6 @@ const GetStarted = () => {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
-          {error && (
-            <p className="validate fst-italic">Please fill this field!</p>
-          )}
           <input
             type="text"
             id="fullname"
@@ -87,9 +87,6 @@ const GetStarted = () => {
             value={fullname}
             onChange={(e) => setFullname(e.target.value)}
           />
-          {error && (
-            <p className="validate fst-italic">Please fill this field!</p>
-          )}
           <input
             type="email"
             id="email"
@@ -97,8 +94,8 @@ const GetStarted = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {error && (
-            <p className="validate fst-italic">Please fill this field!</p>
+          {error2 && (
+            <p className="validate fst-italic">Enter a valid email!</p>
           )}
           <input
             type="number"
@@ -107,11 +104,13 @@ const GetStarted = () => {
             value={number}
             onChange={(e) => setNumber(e.target.value)}
           />
-          {error && (
-            <p className="validate fst-italic">Please fill this field!</p>
-          )}
           <input type="text" placeholder="Referral code (optional)" />
         </form>
+        {error && (
+          <p className="validate fst-italic">
+            All input fields must be filled!
+          </p>
+        )}
         <p className="terms">
           By clicking the Sign Up button below, you agree to TradExpress
           <a href="#"> terms and service</a>
