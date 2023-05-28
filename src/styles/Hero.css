@@ -135,4 +135,8 @@
     width: 130px;
     height: 40px;
   }
+
+  .hero-section {
+    height: 580px;
+  }
 }
