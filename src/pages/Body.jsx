@@ -9,7 +9,7 @@ import keycap3 from "../assets/emojione-monotone_keycap-3.png";
 const Body = () => {
   return (
     <div className="body">
-      <div className="container">
+      <div className="mycontainer">
         <div className="body-heading">
           <h2>Buy and Sell your Cryptocurrency in 3 simple steps</h2>
           <p>

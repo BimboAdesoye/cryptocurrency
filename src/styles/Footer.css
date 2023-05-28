@@ -4,16 +4,16 @@
   padding-bottom: 70px;
 }
 
-.foot .container {
+.foot .mycontainer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 
-.foot .container ul {
+.foot .mycontainer ul {
   padding-left: 0;
 }
 
-.foot .container ul li {
+.foot .mycontainer ul li {
   list-style: none;
   margin-bottom: 1rem;
   font-family: "Roboto", sans-serif;
@@ -37,8 +37,8 @@
   cursor: pointer;
 }
 
-.foot .container .five,
-.foot .container .six {
+.foot .mycontainer .five,
+.foot .mycontainer .six {
   padding-left: 95px;
 }
 
@@ -55,18 +55,18 @@
 }
 
 @media screen and (max-width: 768px) {
-  .foot .container .five,
-  .foot .container .six {
+  .foot .mycontainer .five,
+  .foot .mycontainer .six {
     padding-left: 0px;
   }
 
-  .foot .container {
+  .foot .mycontainer {
     gap: 1.5rem;
   }
 }
 
-@media screen and (max-width: 575px) {
-  .foot .container {
+@media screen and (max-width: 600px) {
+  .foot .mycontainer {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
@@ -80,8 +80,8 @@
     width: 48%;
   }
 
-  .foot .container .five,
-  .foot .container .six {
+  .foot .mycontainer .five,
+  .foot .mycontainer .six {
     padding-left: 0px;
   }
 }

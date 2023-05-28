@@ -24,7 +24,7 @@ const Crypto = () => {
 
   return (
     <div className="crypto">
-      <div className="container">
+      <div className="mycontainer">
         {data.map((datum) => {
           const { id, symbol, price_usd, percent_change_1h } = datum;
           return (

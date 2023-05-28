@@ -6,7 +6,7 @@ import freelancer from '../assets/freelancer.png'
 const WhyCrypto = () => {
   return (
     <div className="whycrypto">
-      <div className="container">
+      <div className=".mycontainer">
         <div className="whycrypto-heading text-center">
           <h2 className="">
             Why do people get involved with Cryptocurrencies?

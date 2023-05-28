@@ -78,6 +78,18 @@
     flex-direction: column;
     gap: 2rem;
   }
+
+  .body-inner {
+    gap: 1rem;
+  }
+
+  .body-text {
+    gap: 1rem;
+  }
+
+  .body-text div p {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 426px) {

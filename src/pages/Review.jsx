@@ -8,7 +8,7 @@ import quote from "../assets/clarity_block-quote-line.png";
 const Review = () => {
   return (
     <div className="review">
-      <div className="container">
+      <div className="mycontainer">
         <h2 className="review-heading text-center">Customers' Review</h2>
         <div className="review-content">
           <div className="review-body">
