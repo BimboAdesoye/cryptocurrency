@@ -3,6 +3,7 @@ import "../styles/Hero.css";
 // import ellipse2 from "../assets/Ellipse 2.svg";
 import appstore from "../assets/Group 68@2x.svg";
 import googleplay from "../assets/Group 69.svg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -16,7 +17,9 @@ const Hero = () => {
             Easily Trade Cryptocurrencies like BTC, USDT, ETH, LTC & XRP with
             NGN.
           </p>
-          <button>Get Started</button>
+          <Link to="/GetStarted">
+            <button>Get Started</button>
+          </Link>
           <div className="hero-img">
             <div>
               <img src={appstore} alt="" />
