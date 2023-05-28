@@ -66,12 +66,18 @@
 
 @media screen and (max-width: 768px) {
   .body-img {
-  max-width: 21.9444rem;
-}
+    max-width: 21.9444rem;
+  }
 
-.body-img img {
-  width: 100%;
-}
+  .body-img img {
+    width: 100%;
+  }
+
+  .body-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 426px) {
@@ -82,7 +88,7 @@
   }
 
   .body-text div p {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
 
   .body-inner:nth-of-type(2) {

@@ -54,6 +54,17 @@
   margin-right: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .foot .container .five,
+  .foot .container .six {
+    padding-left: 0px;
+  }
+
+  .foot .container {
+    gap: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .foot .container {
     grid-template-columns: 1fr;
