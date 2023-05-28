@@ -75,18 +75,28 @@
   border: 2.8px solid #ffffff;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .login {
     padding: 0 2rem 2rem 2rem;
   }
 
   .login-content {
-    padding: 1rem;
+    padding: 4rem 3rem;
   }
 
   .login-content .pass {
     font-size: 12px;
     font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .login-content {
+   padding: 1rem;
+  }
+
+  .form2 {
+    gap: 3px;
   }
 }
 

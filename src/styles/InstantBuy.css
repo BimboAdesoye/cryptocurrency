@@ -93,9 +93,9 @@
   font-weight: 700;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .instantbuy-content .arrow {
-    left: 300px;
+    left: 90%;
   }
 
   .instantbuy {
@@ -104,17 +104,5 @@
 
   .instantbuy-content {
     padding: 1rem;
-  }
-}
-
-@media screen and (max-width: 376px) {
-  .instantbuy-content .arrow {
-    left: 250px;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .instantbuy-content .arrow {
-    left: 190px;
   }
 }
