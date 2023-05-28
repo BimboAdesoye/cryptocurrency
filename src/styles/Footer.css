@@ -68,4 +68,9 @@
   .footer-logos {
     width: 48%;
   }
+
+  .foot .container .five,
+  .foot .container .six {
+    padding-left: 0px;
+  }
 }
