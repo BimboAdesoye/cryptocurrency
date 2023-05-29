@@ -30,7 +30,7 @@
 
 .hero-content button {
   cursor: pointer;
-  width: 339px;
+  width: 21.1875rem;
   height: 45px;
   border: none;
   border-radius: 5px;
@@ -148,7 +148,7 @@
     width: fit-content;
   }
 
-  .hero-content button {
+  .hero-content .start-btn {
     width: 80%;
     margin: auto;
   }

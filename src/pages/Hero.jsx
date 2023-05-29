@@ -17,8 +17,8 @@ const Hero = () => {
             Easily Trade Cryptocurrencies like BTC, USDT, ETH, LTC & XRP with
             NGN.
           </p>
-          <Link to="/GetStarted">
-            <button>Get Started</button>
+          <Link className='w-100' to="/GetStarted">
+            <button className="start-btn">Get Started</button>
           </Link>
           <div className="hero-img">
             <div>
