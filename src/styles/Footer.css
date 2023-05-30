@@ -11,6 +11,7 @@
 
 .foot .mycontainer ul {
   padding-left: 0;
+  width: fit-content;
 }
 
 .foot .mycontainer ul li {
@@ -27,7 +28,7 @@
 .footer-logos {
   display: flex;
   justify-content: space-between;
-  width: 71.7%;
+  width: 100%;
 }
 
 .footer-logos img {
@@ -39,7 +40,7 @@
 
 .foot .mycontainer .five,
 .foot .mycontainer .six {
-  padding-left: 95px;
+  margin-left: 95px;
 }
 
 .copyright {
