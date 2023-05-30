@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles/GetStarted.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const GetStarted = () => {
   const [username, setUsername] = useState("");
@@ -8,6 +8,8 @@ const GetStarted = () => {
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [error, setError] = useState(false);
+  const navigate = useNavigate();
+
   const [error2, setError2] = useState(false);
 
   function handleSubmit(e) {
@@ -19,18 +21,23 @@ const GetStarted = () => {
       setEmail("");
       setNumber("");
     }
-    if (!username) {
+
+    if (!username && !fullname && !email && !number) {
       setError(!error);
     }
-    if (fullname) {
-      setError(!error);
-    }
-    if (email) {
-      setError(!error);
-    }
-    if (number) {
-      setError(!error);
-    }
+    
+    // if (!username) {
+    //   setError(!error);
+    // }
+    // if (!fullname) {
+    //   setError(!error);
+    // }
+    // if (!email) {
+    //   setError(!error);
+    // }
+    // if (!number) {
+    //   setError(!error);
+    // }
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const isFormatValid = emailPattern.test(email);
@@ -39,6 +46,8 @@ const GetStarted = () => {
     }
     return;
   }
+
+  
 
   const [data, setData] = useState("Full Name");
 
@@ -106,20 +115,25 @@ const GetStarted = () => {
           />
           <input type="text" placeholder="Referral code (optional)" />
         </form>
-        {error && (
+        {/* {error && (
           <p className="validate fst-italic">
             All input fields must be filled!
           </p>
-        )}
+        )} */}
         <p className="terms">
           By clicking the Sign Up button below, you agree to TradExpress
           <a href="#"> terms and service</a>
         </p>
-        <Link to="/VerifyMail" className="sign-up">
+
+        <button onClick={handleSubmit} className="sign-up">
+          Sign Up
+        </button>
+
+        {/* <Link to="/VerifyMail" className="sign-up">
           <button onClick={handleSubmit} className="sign-up">
             Sign Up
           </button>
-        </Link>
+        </Link> */}
         <p>
           Already have an account?
           <Link to="/Login" href="#">
